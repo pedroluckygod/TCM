@@ -1,4 +1,4 @@
--- take from the game "ZeN Samurai From TRB Team"
+-- taken from the game "ZeN Samurai From TRB Team"
 
 
 repeat

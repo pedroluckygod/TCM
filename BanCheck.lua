@@ -8,11 +8,11 @@ repeat
 	task.wait()
 until (function()
 	print("Checking...")
-	local _, pcall_result2 = pcall(function() -- Line 4
+	local _, err = pcall(function() -- Line 4
 		game.MarketplaceService:PlayerOwnsAsset(game.Players.LocalPlayer, 1818)
 	end)
-	print(pcall_result2)
-	if pcall_result2 and pcall_result2:find("HTTP 403") then
+	print(err)
+	if err and err:find("403") then
 		print("Banned")
 		return true
 	end
